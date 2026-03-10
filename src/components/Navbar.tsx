@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import logoImage from "../assets/Copilot_20260310_174748.png";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -28,7 +29,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-primary-foreground/10">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="font-display font-bold text-2xl text-primary-foreground tracking-tight">
-          <img src="src/assets/Copilot_20260310_174748.png" alt="TESFA CREATIVE Logo" className="h-14 w-auto" />
+          <img src={logoImage} alt="TESFA CREATIVE Logo" className="h-14 w-auto" />
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
