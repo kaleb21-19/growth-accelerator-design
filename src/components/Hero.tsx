@@ -46,10 +46,10 @@ const Hero = () => {
                 Book a Call
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-display font-medium text-base px-8 py-6">
-                <Play className="mr-2 h-4 w-4" />
-                See Results
-              </Button>
+                {/* <Button size="lg" variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-display font-medium text-base px-8 py-6">
+                  <Play className="mr-2 h-4 w-4" />
+                  See Results
+                </Button> */}
             </div>
           </motion.div>
           

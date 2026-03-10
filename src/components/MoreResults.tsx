@@ -6,7 +6,7 @@ import ResultCard from "@/components/ResultCard";
 import { moreResults } from "@/lib/resultsData";
 
 const MoreResults = () => (
-  <section className="py-20 lg:py-28 bg-background">
+  <section className="py-20 lg:py-28 bg-hero">
     <div className="container">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -14,7 +14,7 @@ const MoreResults = () => (
         viewport={{ once: true }}
         className="text-center mb-14"
       >
-        <h2 className="text-3xl lg:text-4xl font-display font-bold text-foreground tracking-tight">
+        <h2 className="text-3xl lg:text-4xl font-display font-bold text-primary-foreground tracking-tight">
           MORE BEFORE & AFTER <span className="text-gradient-gold">CLIENT RESULTS</span>
         </h2>
       </motion.div>

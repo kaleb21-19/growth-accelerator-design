@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const packages = [
   {
     name: "Grow",
-    price: "$1,497",
+    price: "1,497 Birr",
     popular: false,
     features: [
       "8 short-form videos per month",
@@ -18,7 +18,7 @@ const packages = [
   },
   {
     name: "Scale",
-    price: "$2,997",
+    price: "2,997 Birr",
     popular: true,
     features: [
       "16 short-form videos per month",
@@ -32,7 +32,7 @@ const packages = [
   },
   {
     name: "Dominate",
-    price: "$4,997",
+    price: "4,997 Birr",
     popular: false,
     features: [
       "30 short-form videos per month",

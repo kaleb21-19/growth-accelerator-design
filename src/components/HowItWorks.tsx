@@ -3,29 +3,29 @@ import { Search, FileText, Video, Upload } from "lucide-react";
 
 const steps = [
   {
-    icon: Search,
+    image:"src/assets/research.png" ,
     title: "Research",
     description: "Analyze your niche, competitors, and audience to identify viral content opportunities.",
   },
   {
-    icon: FileText,
+    image:"src/assets/script.png" ,
     title: "Script",
     description: "Create engaging short-form content scripts designed to capture attention and increase watch time.",
   },
   {
-    icon: Video,
+    image:"src/assets/camera.png" ,
     title: "Film & Edit",
     description: "Produce and edit professional social media videos optimized for algorithm performance.",
   },
   {
-    icon: Upload,
+    image:"src/assets/upload.png" ,
     title: "Upload",
     description: "Publish and optimize content across your social platforms to maximize reach and engagement.",
   },
 ];
 
 const HowItWorks = () => (
-  <section className="py-20 lg:py-28 bg-muted">
+  <section className="py-20 lg:py-28 bg-background">
     <div className="container">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ const HowItWorks = () => (
             transition={{ duration: 0.5, delay: i * 0.1 }}
             className="relative bg-card rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 group"
           >
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 ">
               <span className="text-xs font-display font-bold text-accent bg-accent/10 w-8 h-8 rounded-full flex items-center justify-center">
                 {String(i + 1).padStart(2, "0")}
               </span>
@@ -59,9 +59,9 @@ const HowItWorks = () => (
                 <div className="hidden lg:block absolute top-10 right-0 translate-x-1/2 w-6 border-t-2 border-dashed border-border z-10" />
               )}
             </div>
-            <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
-              <step.icon className="w-6 h-6 text-accent" />
-            </div>
+            
+              <img src={step.image} alt={step.title} className="w-20 h-20 object-contain mx-auto" />
+            
             <h3 className="font-display font-bold text-foreground text-lg mb-2">{step.title}</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
           </motion.div>
