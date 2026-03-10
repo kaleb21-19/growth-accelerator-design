@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import logoImage from "../assets/Copilot_20260310_174748.png";
+import logoImage from "../assets/log.png";
 
 const navItems = [
   { label: "Home", href: "/" },
