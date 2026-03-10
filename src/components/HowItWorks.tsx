@@ -1,24 +1,28 @@
 import { motion } from "framer-motion";
 import { Search, FileText, Video, Upload } from "lucide-react";
+import researchImage from "../assets/research.png";
+import scriptImage from "../assets/script.png";
+import cameraImage from "../assets/camera.png";
+import uploadImage from "../assets/upload.png";
 
 const steps = [
   {
-    image:"src/assets/research.png" ,
+    image: researchImage,
     title: "Research",
     description: "Analyze your niche, competitors, and audience to identify viral content opportunities.",
   },
   {
-    image:"src/assets/script.png" ,
+    image: scriptImage,
     title: "Script",
     description: "Create engaging short-form content scripts designed to capture attention and increase watch time.",
   },
   {
-    image:"src/assets/camera.png" ,
+    image: cameraImage,
     title: "Film & Edit",
     description: "Produce and edit professional social media videos optimized for algorithm performance.",
   },
   {
-    image:"src/assets/upload.png" ,
+    image: uploadImage,
     title: "Upload",
     description: "Publish and optimize content across your social platforms to maximize reach and engagement.",
   },
