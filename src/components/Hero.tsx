@@ -25,7 +25,7 @@ const Hero = () => {
               transition={{ delay: 0.2 }}
               className="text-accent font-display font-medium tracking-widest text-sm mb-6"
             >
-              SOCIAL MEDIA GROWTH AGENCY
+              TESFA CREATIVE
             </motion.p>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-primary-foreground leading-[1.05] tracking-tight mb-4">

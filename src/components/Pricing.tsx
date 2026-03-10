@@ -1,38 +1,38 @@
 import { motion } from "framer-motion";
-import { Check, ArrowRight, Star } from "lucide-react";
+import { Check, ArrowRight, Star, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const packages = [
   {
-    name: "Grow",
-    price: "1,497 Birr",
+    name: "Starter",
+    price: "2,500 Birr",
     popular: false,
     features: [
-      "8 short-form videos per month",
+      "10 short-form videos per month",
       "Content research & scripting",
       "Professional editing",
-      "2 platform management",
+      "platform management",
       "Monthly analytics report",
     ],
-    bonus: "Free content strategy session",
+    bonus: "1 video for free 👌 ",
   },
   {
-    name: "Scale",
-    price: "2,997 Birr",
+    name: "Growth",
+    price: "2,000 Birr",
     popular: true,
     features: [
       "16 short-form videos per month",
       "Content research & scripting",
       "Premium editing & motion graphics",
-      "4 platform management",
+      "2 platform management",
       "Weekly analytics & optimization",
       "Dedicated account manager",
     ],
-    bonus: "Free brand identity audit",
+    bonus: " Free brand identity audit",
   },
   {
-    name: "Dominate",
-    price: "4,997 Birr",
+    name: "Premium",
+    price: "1,700 Birr",
     popular: false,
     features: [
       "30 short-form videos per month",
@@ -43,7 +43,7 @@ const packages = [
       "Priority support & strategy calls",
       "Influencer collaboration outreach",
     ],
-    bonus: "Free personal brand photoshoot",
+    bonus: " Free personal brand photoshoot",
   },
 ];
 
@@ -84,7 +84,7 @@ const Pricing = () => (
 
             <h3 className="font-display font-bold text-xl text-foreground mb-2">{pkg.name}</h3>
             <p className="text-4xl font-display font-bold text-foreground mb-1">{pkg.price}</p>
-            <p className="text-muted-foreground text-sm mb-6">per month</p>
+            <p className="text-muted-foreground text-sm mb-6">per video</p>
 
             <ul className="space-y-3 mb-6 flex-1">
               {pkg.features.map((f, j) => (
@@ -106,8 +106,8 @@ const Pricing = () => (
                   : "bg-primary text-primary-foreground hover:bg-primary/90"
               }`}
             >
-              Book a Call
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <span className={pkg.popular ? "text-background" : "text-accent"}>Call us </span>+251946662902
+              <Phone className={`${pkg.popular ? "text-background" : "text-accent"} ml-2 h-4 w-4`} />
             </Button>
           </motion.div>
         ))}
