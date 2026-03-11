@@ -26,7 +26,7 @@ const faqs = [
 ];
 
 const FAQ = () => (
-  <section className="py-20 lg:py-28 bg-background">
+  <section className="pb-20 lg:pb-28 bg-background">
     <div className="container max-w-3xl">
       <motion.div
         initial={{ opacity: 0, y: 20 }}

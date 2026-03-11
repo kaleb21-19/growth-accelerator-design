@@ -26,7 +26,7 @@ const ResultCard = ({ before, after, caption, index }: ResultCardProps) => (
         <span className="absolute top-3 left-3 bg-accent text-accent-foreground text-xs font-display font-semibold px-2.5 py-1 rounded-sm z-10">
           AFTER
         </span>
-        <img src={after} alt="After results" className="w-full h-48 object-cover" />
+        <img src={after} alt="After results" className="w-full h-64 object-contain" />
       </div>
     </div>
     <div className="p-5">

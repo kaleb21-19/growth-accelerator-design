@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, LucidePhone, LucidePhoneOutgoing, PhoneCall, PhoneIncomingIcon, PhoneOutgoingIcon, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroDashboard from "@/assets/hero-dashboard.png";
 
@@ -43,8 +43,8 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-display font-semibold text-base px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                Book a Call
-                <ArrowRight className="ml-2 h-5 w-5" />
+              Call us +251946662902
+                <PhoneOutgoingIcon className="ml-2 h-5 w-5" />
               </Button>
                 {/* <Button size="lg" variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-display font-medium text-base px-8 py-6">
                   <Play className="mr-2 h-4 w-4" />

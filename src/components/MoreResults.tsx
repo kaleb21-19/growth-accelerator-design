@@ -20,7 +20,7 @@ const MoreResults = () => (
       </motion.div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {moreResults.map((result, i) => (
+        {moreResults.slice(0, 6).map((result, i) => (
           <ResultCard key={i} before={result.before} after={result.after} caption={result.caption} index={i} />
         ))}
       </div>

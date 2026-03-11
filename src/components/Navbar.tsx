@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, PhoneOutgoingIcon, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import logoImage from "../assets/log.png";
@@ -87,7 +87,7 @@ const Navbar = () => {
               )
             )}
             <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-display font-semibold w-full">
-              Book a Call
+              Call us +251946662902 <PhoneOutgoingIcon className="ml-2 h-5 w-5" />
             </Button>
           </div>
         </div>
