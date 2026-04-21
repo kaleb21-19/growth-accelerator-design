@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ResultCard from "@/components/ResultCard";
 import { Button } from "@/components/ui/button";
-import { allResults } from "@/lib/resultsData";
+import { moreResults } from "@/lib/resultsData";
 
 const Results = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -25,7 +25,12 @@ const Results = () => {
         <div className="container">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8 pt-4">
-            <Link to="/" className="hover:text-foreground transition-colors font-medium">Home</Link>
+            <Link
+              to="/"
+              className="hover:text-foreground transition-colors font-medium"
+            >
+              Home
+            </Link>
             <ChevronRight className="h-3.5 w-3.5" />
             <span className="text-foreground font-medium">Client Results</span>
           </nav>
@@ -36,16 +41,24 @@ const Results = () => {
             className="text-center mb-14"
           >
             <h1 className="text-3xl lg:text-4xl font-display font-bold text-foreground tracking-tight">
-              CLIENT BEFORE & AFTER <span className="text-gradient-gold">RESULTS</span>
+              CLIENT BEFORE & AFTER{" "}
+              <span className="text-gradient-gold">RESULTS</span>
             </h1>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-              Explore real growth results from our clients across different industries.
+              Explore real growth results from our clients across different
+              industries.
             </p>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {allResults.map((result, i) => (
-              <ResultCard key={i} before={result.before} after={result.after} caption={result.caption} index={i} />
+            {moreResults.map((result, i) => (
+              <ResultCard
+                key={i}
+                before={result.before}
+                after={result.after}
+                caption={result.caption}
+                index={i}
+              />
             ))}
           </div>
 

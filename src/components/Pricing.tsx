@@ -5,45 +5,35 @@ import { Button } from "@/components/ui/button";
 const packages = [
   {
     name: "Starter",
-    price: "2,500 Birr",
+    price: "25,000 Birr",
     popular: false,
     features: [
-      "10 short-form videos per month",
-      "Content research & scripting",
+      "8 High Quality videos per month",
+      "Clean Editing & Fast Delivery",
       "Professional editing",
-      "platform management",
-      "Monthly analytics report",
     ],
-    bonus: "1 video for free 👌 ",
+    bonus: "Perfect For Brands Testing content ",
   },
   {
     name: "Growth",
-    price: "2,000 Birr",
+    price: "33,000 Birr",
     popular: true,
     features: [
-      "16 short-form videos per month",
-      "Content research & scripting",
-      "Premium editing & motion graphics",
-      "2 platform management",
-      "Weekly analytics & optimization",
-      "Dedicated account manager",
+      "15 High Quality videos per month",
+      "Advance Editing & Fast Delivery",
     ],
-    bonus: " Free brand identity audit",
+    bonus: "For Brands Ready to Grow consistently ",
   },
   {
-    name: "Premium",
-    price: "1,700 Birr",
+    name: "Dominance",
+    price: "50,000 Birr",
     popular: false,
     features: [
-      "30 short-form videos per month",
-      "Full content production team",
-      "Premium editing & motion graphics",
-      "All platform management",
-      "Daily analytics & optimization",
-      "Priority support & strategy calls",
-      "Influencer collaboration outreach",
+      "25-30 High Quality videos per month",
+      "viral Editing & Full Strategy",
+      "Advance Editing & Fast Delivery",
     ],
-    bonus: " Free personal brand photoshoot",
+    bonus: "For Brands that Want Attention + Sales ",
   },
 ];
 
@@ -57,7 +47,8 @@ const Pricing = () => (
         className="text-center mb-14"
       >
         <h2 className="text-3xl lg:text-4xl font-display font-bold text-foreground tracking-tight">
-          SOCIAL MEDIA MANAGEMENT <span className="text-gradient-gold">PACKAGES</span>
+          SOCIAL MEDIA MANAGEMENT{" "}
+          <span className="text-gradient-gold">PACKAGES</span>
         </h2>
         <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
           Choose the plan that fits your growth goals.
@@ -82,13 +73,20 @@ const Pricing = () => (
               </span>
             )}
 
-            <h3 className="font-display font-bold text-xl text-foreground mb-2">{pkg.name}</h3>
-            <p className="text-4xl font-display font-bold text-foreground mb-1">{pkg.price}</p>
+            <h3 className="font-display font-bold text-xl text-foreground mb-2">
+              {pkg.name}
+            </h3>
+            <p className="text-4xl font-display font-bold text-foreground mb-1">
+              {pkg.price}
+            </p>
             <p className="text-muted-foreground text-sm mb-6">per video</p>
 
             <ul className="space-y-3 mb-6 flex-1">
               {pkg.features.map((f, j) => (
-                <li key={j} className="flex items-start gap-2.5 text-sm text-foreground">
+                <li
+                  key={j}
+                  className="flex items-start gap-2.5 text-sm text-foreground"
+                >
                   <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
                   {f}
                 </li>
@@ -96,7 +94,10 @@ const Pricing = () => (
             </ul>
 
             <div className="bg-accent/10 rounded-md p-3 mb-6">
-              <p className="text-xs font-display font-semibold text-accent">🎁 BONUS: {pkg.bonus}</p>
+              <p className="text-xs font-display font-semibold text-accent">
+                {" "}
+                {pkg.bonus}
+              </p>
             </div>
 
             <Button
@@ -106,8 +107,13 @@ const Pricing = () => (
                   : "bg-primary text-primary-foreground hover:bg-primary/90"
               }`}
             >
-              <span className={pkg.popular ? "text-background" : "text-accent"}>Call us </span>+251946662902
-              <Phone className={`${pkg.popular ? "text-background" : "text-accent"} ml-2 h-4 w-4`} />
+              <span className={pkg.popular ? "text-background" : "text-accent"}>
+                Call us{" "}
+              </span>
+              +251946662902
+              <Phone
+                className={`${pkg.popular ? "text-background" : "text-accent"} ml-2 h-4 w-4`}
+              />
             </Button>
           </motion.div>
         ))}
